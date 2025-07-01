@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Connexion - Pixel Wars</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Connexion à Pixel Wars</h1>
+  <form id="signup-form">
+    <input type="text" id="pseudo" placeholder="Pseudo" required>
+    <input type="email" id="email" placeholder="Email" required>
+    <input type="password" id="password" placeholder="Mot de passe" required>
+    <select id="country">
+      <option value="france">France</option>
+      <option value="germany">Allemagne</option>
+      <option value="japan">Japon</option>
+      <option value="usa">USA</option>
+    </select>
+    <button type="submit">Créer un compte</button>
+  </form>
+
+  <p>Déjà inscrit ? <a href="index.html">Se connecter</a></p>
+
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore-compat.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
